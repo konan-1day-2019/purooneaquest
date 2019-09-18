@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.icu.text.CaseMap;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -113,20 +114,26 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(QuizActivity.this, LevelActivity.class);
                 startActivity(intent);
             } else {
-                Sentence.setText(senten[i]);
-                i++;
-                Sentence.setTextSize(20);
-                Sentence.setText(senten[i]);
-                ansButton[0].setText("1." + choise[i][0]);
-                ansButton[1].setText("2." + choise[i][1]);
-                ansButton[2].setText("3." + choise[i][2]);
-                ansButton[3].setText("4." + choise[i][3]);
+
+                new Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        Sentence.setText(senten[i]);
+                        i++;
+                        Sentence.setTextSize(20);
+                        Sentence.setText(senten[i]);
+                        ansButton[0].setText("1." + choise[i][0]);
+                        ansButton[1].setText("2." + choise[i][1]);
+                        ansButton[2].setText("3." + choise[i][2]);
+                        ansButton[3].setText("4." + choise[i][3]);
+                        prob += 1;
+                        prob_number.setText(prob + "/" + all_prob);
+                    }
+                }, 3000);
             }
-            prob += 1;
-            prob_number.setText(prob + "/" + all_prob);
 
-
-        }else {
+            }else {
             Sentence.setText("不正解！！" + ans_number[i]);
             Intent intent = new Intent(QuizActivity.this, TitleActivity.class);
             startActivity(intent);
