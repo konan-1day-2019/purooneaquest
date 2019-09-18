@@ -15,5 +15,12 @@ public class LevelActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level);
+        Button nextButton = (Button)findViewById(R.id.button5);
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(LevelActivity.this, QuizActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
