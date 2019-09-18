@@ -1,0 +1,71 @@
+Q1.以下の実行結果を選択してください。
+#include <stdio.h>
+int main(void) {
+    printf(“Hello, World!\n”);
+    return 0;
+}
+x
+Hello, World!
+出力無し
+Hello, C World!
+HHello, World!!
+1
+Q2.以下の実行結果を選択してください。
+#include <stdio.h>
+int main(void) {
+    int a;
+    a = 1;
+    printf(“%d”, a);
+    return 0;
+}
+x
+a
+出力無し
+0
+1
+4
+Q3.以下の実行結果を選択してください。
+#include <stdio.h>
+int main(void) {
+    int a = 3;
+    int b = 2;
+    printf(“%d”, a % b);
+    return 0;
+}
+x
+3
+2
+1
+0
+3
+Q4.以下の実行結果を選択してください。
+#include <stdio.h>
+int main(void) {
+    int a = 1;
+    if(a == 1) {
+        printf(“Yes\n”);
+    } else {
+        printf(“No\n”);
+}
+return 0;
+}
+x
+Yes
+No
+出力無し
+1
+1
+Q5.以下の実行結果を選択してください。
+#include <stdio.h>
+int main(void) {
+    int a = 3;
+    int b = 2;
+    printf(“%d”, a / b);
+    return 0;
+}
+x
+1.5
+2
+3
+1
+4
