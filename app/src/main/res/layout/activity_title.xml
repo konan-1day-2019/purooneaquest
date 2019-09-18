@@ -7,6 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".TitleActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1048dp"
+        android:layout_height="786dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/title" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="280dp"
