@@ -13,7 +13,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     int all_prob=5;
     int ans_number=0;
     int button_number=0;
-    int i;
+    int i=1;
     String senten = "問題文";
 
     public TextView Sentence;
@@ -65,12 +65,14 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         }
         if(button_number==ans_number) {
             Sentence.setText("正解！！");
-            if(i==5){
+            if(i>=5){
                 Intent intent = new Intent(QuizActivity.this, LevelActivity.class);
+                startActivity(intent);
+            } else {
+                senten = "問題" + (i + 1);
+                Sentence.setText(senten);
+                i++;
             }
-            senten="問題２";
-            Sentence.setText(senten);
-            i++;
 
 
 
