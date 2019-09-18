@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".GenreActivity"/>
+        <activity android:name=".LaungageActivity"/>
+        <activity android:name=".LevelActivity"/>
         <activity android:name=".QuizActivity"/>
     </application>
 

@@ -13,7 +13,7 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_quiz);
 
         //選択肢の変数宣言
         Button ansButton1 = (Button) findViewById(R. id. button1);
