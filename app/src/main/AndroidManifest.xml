@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".GenreActivity"/>
+        <activity android:name=".QuizActivity"/>
     </application>
 
 </manifest>
