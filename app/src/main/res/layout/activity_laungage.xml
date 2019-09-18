@@ -40,29 +40,13 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="96dp"
             android:layout_marginRight="96dp"
-            android:layout_marginBottom="100dp"
             android:background="#B3FFFFFF"
             android:text="C言語"
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/button4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="238dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="52dp"
-            android:layout_marginLeft="52dp"
-            android:layout_marginBottom="304dp"
-            android:background="#B3FFFFFF"
-            android:text="Processing"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.231"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="231dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
